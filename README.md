@@ -302,3 +302,53 @@ professional support requests please visit [https://ultralytics.com/contact](htt
         <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-instagram.png" width="3%"/>
     </a>
 </div>
+
+   저희 연구실 실행 환경: 
+
+프로그램: Pycharm
+Python version: 3.9.7
+
+*********************************************************************************************************************************************
+1. 환경설정
+
+Pycharm 프로젝트로 압축파일(Yolov5)를 열어주시고 Terminal창에서 Pytorch 와 requirements.txt를 설치하시면 됩니다.
+
+1-1. Pytorch 설치
+
+cf)
+1. GPU를 가지고 계시면 CUDA 버전에 맞춰서 설치
+2. GPU가 없으면 CPU only를 설치( epoch(학습)하실때 GPU가 필요해 GPU가 설치되어 있는 PC에서 사용하셔야 좋습니다.)
+
+```bash
+# CUDA 11.0
+pip install torch==1.7.0+cu110 torchvision==0.8.0+cu110 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+
+# CUDA 10.2
+pip install torch==1.7.0 torchvision==0.8.0 torchaudio==0.7.0
+
+# CUDA 10.1
+pip install torch==1.7.0+cu101 torchvision==0.8.0+cu101 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+
+# CUDA 9.2
+pip install torch==1.7.0+cu92 torchvision==0.8.0+cu92 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+
+# CPU only
+pip install torch==1.7.0+cpu torchvision==0.8.0+cpu torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+1-2. requirements 설치
+```bash
+pip install -r requirements.txt
+```
+
+
+---> 두가지 모두 완료하셨으면 모델을 돌리기위한 환경설정은 갖추어졌습니다. 
+
+
+2. 모델 실행
+
+yolov5 폴더 안에 test01.py에 있는 code를 Terminal창에서 실행시키시면 됩니다.
+
+Train 코드 실행 후 Detect 코드 실행하시면 됩니다.
+
+cf) GPU 여유가 되시면 epoch수만 늘려서 학습시키면 더 정확한 결과값이 나옵니다.
