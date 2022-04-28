@@ -338,8 +338,7 @@ pip install torch==1.7.0+cpu torchvision==0.8.0+cpu torchaudio==0.7.0 -f https:/
 ```
 
 1-2. requirements 설치
-```pip
-   
+```c
 pip install -r requirements.txt
 
 ```
