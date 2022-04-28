@@ -319,7 +319,7 @@ cf)
 1. GPU를 가지고 계시면 CUDA 버전에 맞춰서 설치
 2. GPU가 없으면 CPU only를 설치( epoch(학습)하실때 GPU가 필요해 GPU가 설치되어 있는 PC에서 사용하셔야 좋습니다.)
 
-```python3
+```pypy3
 # CUDA 11.0
 pip install torch==1.7.0+cu110 torchvision==0.8.0+cu110 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
 
