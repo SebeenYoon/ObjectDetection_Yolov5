@@ -2,4 +2,4 @@ train: ./datasets/images/train/
 val:  ./datasets/images/val/
 
 nc: 2
-names: ['Adhensive', 'ribbon_and_dap']
+names: ['Insulation', 'Adhensive']
